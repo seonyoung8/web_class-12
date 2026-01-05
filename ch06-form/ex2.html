@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스팀 회원가입 예제</title>
+</head>
+<body>
+    <form action="#">
+        <h2>CREATE YOUR ACCOUNT</h2>
+        <div>
+            <label for="user-email">Email Address</label>
+            <input type="text" id="user-email">
+        </div>
+        <div>
+            <label for="address-confirm">Confirm your Address</label>
+            <input type="text" id="address-confirm">
+        </div>
+        <div>
+            <label for="country-residence">Country of Residence</label>
+            <select id="country-residence">
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="italy">italy</option>
+                <option value="canada">canada</option>
+            </select>
+        </div>
+        <div id="captcha">
+
+        </div>
+        <div>
+            <input type="checkbox" id="agree">
+            <label for="agree">I am 13 years of age or older and agree to the terms of the <strong>Steam Subscriber Agreement</strong> and the <strong>Valve Privacy Policy.</strong></label>
+        </div>
+        <!-- <button type="submit">Continue</button> -->
+        <input type="submit" value="Continue">
+    </form>
+</body>
+</html>
