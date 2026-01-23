@@ -1,0 +1,92 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+
+.stp1{
+    font-family: "아보";
+}
+
+.titlebox{
+    width: 1604px;
+    margin: 0 auto;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.titlebox h1{
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-bottom: 1rem;
+}
+.titlebox p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.banner{
+    height: 700px;
+    background: url(../img/cbanner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.banner h2{
+    color: #fff;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.subbox{
+    width: 1604px;
+    margin: 0 auto;
+}
+.subbox h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.subbox p{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.gallery{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.gallery figure{
+    flex:1;
+    aspect-ratio: 521/520;
+}
+.gallery figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+.menu li{
+    flex:1;
+    aspect-ratio: 521/94;
+}
+.menu li h4{
+font-weight: 700;
+font-style: Bold;
+line-height: 140%;
+text-transform: capitalize;
+margin-bottom: 0.5rem;
+}
+.menu li p{
+line-height: 140%;
+text-align: left;
+}
