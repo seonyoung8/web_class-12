@@ -1,0 +1,53 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+.stp1{
+    font-family: "아보";
+}
+.common-frame{
+    margin: 0 auto;
+    width: 1600px;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+}
+.common-frame .logo{
+    aspect-ratio: 1/1;
+}
+.common-frame .gnb{
+    display: flex;
+}
+
+.gnb ul{ 
+    display: flex;
+    align-items: center;
+    width: 866px;
+}
+
+.gnb li{
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    flex-grow:1;
+}
+
+.banner{
+    background: url(../img/banner.jpg) 50% 50% / cover;
+    height: 700px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.banner h1{
+font-size: 7.5rem;
+line-height: 100%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+color: #fff;
+}

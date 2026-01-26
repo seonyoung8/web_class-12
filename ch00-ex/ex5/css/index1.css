@@ -1,0 +1,86 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+.common-frame{
+    margin: 0 auto;
+    width: 1600px;
+}
+.title{
+    padding-top: 8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.stp1{
+    font-family: "아보";
+}
+.title+p{
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.banner{
+    height: 700px;
+    margin-top: 5rem;
+    background: url(../img/cbanner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.banner h2{
+    width: 1600px;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #fff;
+} 
+.title2{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+.title2+p{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.gallery{
+    display: flex;
+    gap:1rem;
+}
+.gallery>li{
+    flex:1;
+}
+.gallery figure{
+    aspect-ratio: 1/1;
+    line-height: 0;
+    margin-bottom: 1rem;
+}
+.gallery figure img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+.gallery h4{
+font-weight: 700;
+font-size: 1rem;
+line-height: 140%;
+text-transform: capitalize;
+}
+
+.gallery p{
+    line-height: 140%;
+    display: -webkit-box;        /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;/* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 2;       /* 보여줄 최대 줄 수 */
+    overflow: hidden;            /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;     /* 말줄임 표기 */
+}
