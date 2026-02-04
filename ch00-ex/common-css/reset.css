@@ -10,7 +10,7 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
-ul,ol{
+li,ul,ol{
     list-style: none;
 }
 em,address,i{
