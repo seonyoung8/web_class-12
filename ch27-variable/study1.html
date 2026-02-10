@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>변할 가능성이 있는 수</p>
+    <script>
+        let a; //a라는 변수를 선언(생성)한다
+        a = 10 //a라는 변수를 10으로 초기화한다(최초로 저장하는 경우)
+        console.log(a + 10)
+        console.log(a)
+        a=a+10
+        console.log(a)
+        a+=10 //a에 10을 더한 값을 a에 저장한다는 표현
+        console.log(a)
+        let b = 20 //생성함과 동시에 초기화
+        b-=2 //b에서 2를 뺀값을 b에 저장한다
+        console.log(b)
+        let c = "안녕하세요"
+        console.log(c.length) //5 length글자수 의미
+        console.log(c[2]) //하 0부터세서 2번째 있는 문자
+
+        let name = prompt("당신의 이름이 뭔가요?")
+        document.write("<h3>"+name+"! 안녕!!!<h3>") 
+        let age = prompt( name+"님의 나이는 몇 살인가요?")
+        //document.write 본문에 작성을 시킨다. 태그(꺽쇠) 쓸때는 ""안에 작성, 변수 넣을때 "+(여기)+" 
+        document.write("<p>"+name+"님의 나이는 "+age+"살이군요. 반갑습니다.</p>")
+    </script>
+    <h1>상수</h1>
+    <p>변하지 않는 수</p>
+    <script>
+        123
+        "김선영"
+    </script>
+</body>
+</html>
