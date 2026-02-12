@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        10>2?"A":"B" // A 조건부분이 ture면 :의 앞부분
+        5<3?"가":"나" // 나 조건부분이 false면 :의 뒷부분
+        10!=10?"다":"라" // 라 false라서
+        20?"C":"D" // C ture라서
+        !0?"E":"F" // E false의 부정은 ture라서
+        30<20?"A":5==5?"c":"D" // C 30<20? 거짓 5==5? 참 C
+        
+        let score = 75
+        score>=90?"A":score>=80?"B":score>=70?"C":"D" // C
+    </script>
+</body>
+</html>

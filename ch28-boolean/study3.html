@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        10>2 && 5>2 // &&(그리고) 모두가 ture면 ture
+        5>2 && 5>2 && 5<3 // false
+        10>4 && 0 && 20 // false
+        let b =  10>4 && 0 && 20
+        console.log(b) // 0 fales가 결론난 곳 이후에 해석 안함
+        0 && 10 && 20 && 30 // false
+        //10>4 && 0 && 20 + 0 && 10 && 20 && 30
+
+        10<2 || 3!=3 || 4>2 // ||(또는) 하나라도 true면 true
+        0 || !10 || !!20 // true
+        let a = 10 || "" || 20 // true
+        console.log(a) // 10 true가 결론난 곳 이후 해석 안함
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean - 참 거짓 데이터</h1>
+    <script>
+        10>2 // true
+        10<2 // false
+        10>=2 // true 10이 2보다 크거나 같다(이상이다)
+        10<=2 // false 10이 2보다 작거나 같다(이하다)
+        10==10 // true 10이 10과 같다 (값만 비교할때)
+        10===10 // true 10이 10과 데이터 형태까지 모두 같다(엄격한 비교)
+        10!=1 // true 10이 1과 같지 않다 (!은 not의 의미)
+        !(10>2) // false 
+        console.log(10>2)
+        console.log(!!(10>2))
+
+        0 // false 0은 수가 없다라는 뜻으로 간주
+        "" // false 내용이 없는 것으로 간주
+        let a // false 변수에 값이 없으면 
+        undefined // 없다는 뜻으로 false
+        null // false 비운다라는 뜻 없다로 간주
+        !(-12) // 숫자데이터가 있기때문에 true로 간주하지만 !부정 false
+        !"" // ""은 false이지만 ! 부정 false
+        !a // a는 값이 없어 부정이지만 ! 부정 true
+        
+        let b = null 
+
+
+    </script>
+</body>
+</html>
