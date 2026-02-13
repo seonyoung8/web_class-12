@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let a= ["사과","배","귤","수박"] //""사이데이터는 원소라고 한다. 순번은 0부터. a라는 변수에 배열을 저장
+        console.log(a[0][1]) //0번째 원소중에 1번째 원소 
+        console.log(a[2]) //0번째 원소를 선택을 한다.[] 순번대괄호 인덱스박스라고 한다.["사과","배","귤","수박"][2]와 같은 표현
+        console.log(a.length) //a배열의 .length (원소의 개수) 
+        let b = [
+            1,
+            2,
+            3,
+            4
+        ][3]
+        // a[b[3]] -> b[3]=4 a[4] a는 4번째 요소가 없으므로 undefined
+        // a[b[3]?1:2] -> b[3]=4 a[4] 0이아닌 모든 숫자이므로 true =1
+        let c = [
+        "장윤서",
+        "이은지",
+        "김선영",
+        "김가희",
+        "최예슬"
+        ]
+        c[0] // "장윤서"
+        c[4] // "최예슬"
+        c[1].length // "이은지"의 원소개수 3
+        c[2][1]+c[3][2] // c[2]"김선영"의 1번 원소 선+ c[3]"김가희"의 2번 원소 희 = 선희
+        console.log((!c[3]||!c[4]||c[1])[0]) //-> ture c[1] "이은지"의 0번 원소 2
+
+        let d = 0||0||1
+        console.log(d)
+
+        let person1 = ["정현진","남자","infp",170,76,false,["게임","독서","러닝"]]
+        person1[0] // "정현진"
+        person1[3] // 170
+        person1[5]?"기혼":"미혼" // "미혼"
+        person1[6][2][1] // ["게임","독서","러닝"]의 2번째 원소 "러닝"의 "닝"
+        </script>
+</body>
+</html>
