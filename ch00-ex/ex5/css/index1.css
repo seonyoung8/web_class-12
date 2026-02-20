@@ -1,3 +1,10 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px;
+}
+
 html{
     font-size: 20px;
     font-family: 'Pretendard',sans-serif;
@@ -83,4 +90,43 @@ text-transform: capitalize;
     -webkit-line-clamp: 2;       /* 보여줄 최대 줄 수 */
     overflow: hidden;            /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;     /* 말줄임 표기 */
+}
+
+@media (max-width:3840px){
+        html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .banner h2 {
+    font-size: 80px;
+    }
+    .common-frame {
+    margin: 0 2rem;
+    width: auto;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .banner h2 {
+    font-size: 50px;
+    }
+    .common-frame {
+    margin: 0 1rem;
+    width: auto;
+    }
+    .gallery {
+    display: flex;
+    flex-direction: column;
+    }
 }
