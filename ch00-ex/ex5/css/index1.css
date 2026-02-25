@@ -91,7 +91,7 @@ text-transform: capitalize;
     overflow: hidden;            /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;     /* 말줄임 표기 */
 }
-
+@media (max-width:5120px){}
 @media (max-width:3840px){
         html{
         font-size: var(--base-wide1);
@@ -106,7 +106,11 @@ text-transform: capitalize;
     html{
         font-size: var(--base-pad);
     }
+    .banner{
+        height: 600px;
+    }
     .banner h2 {
+    width: auto;
     font-size: 80px;
     }
     .common-frame {
@@ -118,15 +122,19 @@ text-transform: capitalize;
     html{
         font-size: var(--base-mo);
     }
+    .banner{
+        height: 500px;
+    }
     .banner h2 {
-    font-size: 50px;
+        font-size: 50px;
     }
     .common-frame {
-    margin: 0 1rem;
-    width: auto;
+        margin: 0 1rem;
+        width: auto;
     }
     .gallery {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        gap:2rem;
+        flex-direction: column;
     }
 }

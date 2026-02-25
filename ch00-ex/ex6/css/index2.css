@@ -1,3 +1,9 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px;
+}
 html{
     font-size: 20px;
     font-family: 'Pretendard',sans-serif;
@@ -46,4 +52,37 @@ header .common-frame{
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+}
+@media (max-width:5120px){}
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-tab);
+    }
+    .banner{ 
+        height: 600px;
+    }
+    .banner h1{
+        font-size: 80px;
+    }
+    header .common-frame {
+        width: auto;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .banner h1{
+        font-size: 50px;
+    }
 }
