@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p class ="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum repellendus aliquam quos incidunt laboriosam debitis ea ullam necessitatibus, soluta est voluptatibus suscipit iure perspiciatis omnis! Atque accusantium eum quae dignissimos?</p>
+    <p class ="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum repellendus aliquam quos incidunt laboriosam debitis ea ullam necessitatibus, soluta est voluptatibus suscipit iure perspiciatis omnis! Atque accusantium eum quae dignissimos?</p>
+    <p class ="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum repellendus aliquam quos incidunt laboriosam debitis ea ullam necessitatibus, soluta est voluptatibus suscipit iure perspiciatis omnis! Atque accusantium eum quae dignissimos?</p>
+    <script>
+        let h1tag = document.querySelector("h1") 
+        // 문서에서 h1태그 한 개만 선택하여 객체(dom) 형태로 리턴함(지정)
+        h1tag.style.color = "red"
+        // .으로 접근하여 색상속성을 red로 바꿔준다.인라인 스타일로 적용된다.
+        h1tag.style.fontSize = "80px"
+        // 기존에 쓰던 font-size는 camelCase로 바꿔서 사용한다.
+        h1tag.style.textDecoration = "underline"
+
+        //let ptag = document.querySelector(".a") ()안에 선택자
+        //ptag.style.color = "green" 
+        // 찾는 클래스중에 가장 첫번째 요소만 선택한다. 따라서 3개의 p태그중에 첫번째 p태그만 초록색이 된다.
+        let ptag = document.querySelectorAll(".a") 
+        // 찾는 클래스의 모든 요소를 선택한다.[{}, {}, {}] 배열형태로 저장된다.
+        // ptag[0].style.color = "green"
+        // ptag[1].style.color = "green"
+        // ptag[2].style.color = "green"
+        for(let i=0; i<ptag.length; i++){
+            ptag[i].style.color = "green"
+        }
+        ptag.forEach(function(tag){
+            tag.style.color = "red"
+        })  
+        // 배열의 각각의 원소마다 함수(동작)를 실행하는 메서드이다.익명함수 
+        ptag.forEach(tag=>{
+            tag.style.color = "blue"
+        })
+        //화살표 함수 ()생략
+
+    </script>
+</body>
+</html>
