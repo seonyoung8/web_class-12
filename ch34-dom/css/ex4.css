@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0;}
+.station{
+    width: 1000px;
+    height: 600px;
+    border: 10px solid #000;
+    margin: 40px auto;
+    overflow: hidden;
+}
+ul{list-style: none;}
+.train{
+    width: 4000px;
+    height: 600px
+}
+.train li{
+    width: 1000px;
+    height: 600px;
+font-size: 100px;
+}
+.train li:nth-of-type(1){
+    background-color: red;
+}
+.train li:nth-of-type(2){
+    background-color: blue;
+}
+.train li:nth-of-type(3){
+    background-color: green;
+}
+.train li:nth-of-type(4){
+    background-color: gold;
+}
