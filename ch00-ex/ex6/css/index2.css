@@ -3,7 +3,10 @@
     --base-tab:18px;
     --base-mo:14px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ec7f0e503bfdadee44fdcb4efc7c0827c50483e1
 .hiddenGnb{
     display: none;
 }
@@ -87,7 +90,11 @@ header .common-frame{
     html{
         font-size: var(--base-tab);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> ec7f0e503bfdadee44fdcb4efc7c0827c50483e1
     .banner h1 {
         font-size: 80px;
     }
@@ -149,4 +156,6 @@ header .common-frame{
         width: auto;
         margin: 0 1rem;
     }
+    
+    
 }
